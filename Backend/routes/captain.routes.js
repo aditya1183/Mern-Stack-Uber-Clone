@@ -43,13 +43,13 @@ router.post(
 
 router.get(
   "/profile",
- // authMiddleware.authCaptain,
+  authMiddleware.authCaptian,
   captainController.getCaptainProfile
 );
 
 router.get(
   "/logout",
-  //authMiddleware.authCaptain,
+  authMiddleware.authCaptian,
   captainController.logoutCaptain
 );
 
